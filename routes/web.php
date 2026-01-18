@@ -29,6 +29,7 @@ Route::get('/db-seed/{class}', function ($class) {
     ]);
 });
 
+
 Route::get('/optimize:clear', function () {
     Artisan::call('optimize:clear');
 });
