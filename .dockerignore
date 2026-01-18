@@ -1,0 +1,26 @@
+# Node
+node_modules
+npm-debug.log
+yarn.lock
+
+# Laravel
+vendor
+storage/logs
+storage/framework
+bootstrap/cache
+
+# Git
+.git
+.gitignore
+
+# Env
+.env
+.env.*
+
+# OS / Editor
+.DS_Store
+.idea
+.vscode
+
+# Tests
+tests
