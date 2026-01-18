@@ -3,6 +3,17 @@
 use Illuminate\Support\Facades\Route;
 use  \Illuminate\Support\Facades\Artisan;
 
+Route::get('/session-table', function ($path) {
+  Artisan::call('session:table');
+});
+
+
+Route::get('/all-migrate', function ($path) {
+    Artisan::call('migrate', [
+        '--force' => true
+    ]);
+});
+
 Route::get('/all-migrate/{path}', function ($path) {
     Artisan::call('migrate', [
         '--path' => $path,
